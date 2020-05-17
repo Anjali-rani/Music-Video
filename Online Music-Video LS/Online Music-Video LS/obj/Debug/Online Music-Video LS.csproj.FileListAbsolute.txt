@@ -1,0 +1,10 @@
+E:\Shweta\All Projects\MCA Projects\Online Music-Video Library System\Online Music-Video LS\Online Music-Video LS\bin\Online Music-Video LS.dll
+E:\Shweta\All Projects\MCA Projects\Online Music-Video Library System\Online Music-Video LS\Online Music-Video LS\bin\Online Music-Video LS.pdb
+E:\Shweta\All Projects\MCA Projects\Online Music-Video Library System\Online Music-Video LS\Online Music-Video LS\obj\Debug\Online Music-Video LS.csprojResolveAssemblyReference.cache
+E:\Shweta\All Projects\MCA Projects\Online Music-Video Library System\Online Music-Video LS\Online Music-Video LS\obj\Debug\Online Music-Video LS.dll
+E:\Shweta\All Projects\MCA Projects\Online Music-Video Library System\Online Music-Video LS\Online Music-Video LS\obj\Debug\Online Music-Video LS.pdb
+F:\projects19\Online Music-Video LS-20190918T184620Z-001\Online Music-Video LS\Online Music-Video LS\bin\Online Music-Video LS.dll
+F:\projects19\Online Music-Video LS-20190918T184620Z-001\Online Music-Video LS\Online Music-Video LS\bin\Online Music-Video LS.pdb
+F:\projects19\Online Music-Video LS-20190918T184620Z-001\Online Music-Video LS\Online Music-Video LS\obj\Debug\Online Music-Video LS.csprojResolveAssemblyReference.cache
+F:\projects19\Online Music-Video LS-20190918T184620Z-001\Online Music-Video LS\Online Music-Video LS\obj\Debug\Online Music-Video LS.dll
+F:\projects19\Online Music-Video LS-20190918T184620Z-001\Online Music-Video LS\Online Music-Video LS\obj\Debug\Online Music-Video LS.pdb

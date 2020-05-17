@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35DD07E7-025B-4D57-891A-216BE8334B0F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Online_Music_Video_LS</RootNamespace>
+    <AssemblyName>Online Music-Video LS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Add.aspx" />
+    <Content Include="AddAlbum.aspx" />
+    <Content Include="AddArtists.aspx" />
+    <Content Include="AddCategory.aspx" />
+    <Content Include="AddLyrics.aspx" />
+    <Content Include="AddSong.aspx" />
+    <Content Include="AddSongsmp3mp4.aspx" />
+    <Content Include="AddSongsmp4.aspx" />
+    <Content Include="AdminHome.aspx" />
+    <Content Include="AllSongs.aspx" />
+    <Content Include="AllSongsmp3.aspx" />
+    <Content Include="AllSongsmp4.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="css\creative.css" />
+    <Content Include="css\creative.min.css" />
+    <Content Include="css\full-slider.css" />
+    <Content Include="css\landing-page.min.css" />
+    <Content Include="css\simple-sidebar.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\style7.css" />
+    <Content Include="Delete.aspx" />
+    <Content Include="DeleteAlbum.aspx" />
+    <Content Include="DeleteArtist.aspx" />
+    <Content Include="DeleteCategory.aspx" />
+    <Content Include="DeleteSong.aspx" />
+    <Content Include="dewplayer-vol.swf" />
+    <Content Include="ForgotPass.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="img\11.jpg" />
+    <Content Include="img\111.jpeg" />
+    <Content Include="img\1111.jpg" />
+    <Content Include="img\1234.jpg" />
+    <Content Include="img\999.jpg" />
+    <Content Include="img\bg-masthead.jpg" />
+    <Content Include="img\2222.jpg" />
+    <Content Include="img\234.jpg" />
+    <Content Include="img\456.jpg" />
+    <Content Include="img\55.jpg" />
+    <Content Include="img\66.jpg" />
+    <Content Include="img\789.jpg" />
+    <Content Include="img\78910.jpg" />
+    <Content Include="img\bann11.jpg" />
+    <Content Include="img\banner2.jpg" />
+    <Content Include="img\banner33.jpg" />
+    <Content Include="img\banner6.jpg" />
+    <Content Include="img\bg-8.jpg" />
+    <Content Include="img\bhetli.jpg" />
+    <Content Include="img\dhaga1.jpg" />
+    <Content Include="img\kabir4.jpg" />
+    <Content Include="img\login1.gif" />
+    <Content Include="img\login12.png" />
+    <Content Include="img\music16.jpg" />
+    <Content Include="img\perfect2.jpg" />
+    <Content Include="img\pic02.jpg" />
+    <Content Include="img\portfolio\fullsize\collagebolly.png" />
+    <Content Include="img\portfolio\fullsize\collagebollyalbum.jpg" />
+    <Content Include="img\portfolio\fullsize\collageholly.jpg" />
+    <Content Include="img\portfolio\fullsize\collagemarathi.jpg" />
+    <Content Include="img\portfolio\thumbnails\collagebolly.png" />
+    <Content Include="img\portfolio\thumbnails\collagebollyalbum.jpg" />
+    <Content Include="img\portfolio\thumbnails\collageholly.jpg" />
+    <Content Include="img\portfolio\thumbnails\collagemarathi.jpg" />
+    <Content Include="img\q.jpg" />
+    <Content Include="img\r.jpg" />
+    <Content Include="img\register1.gif" />
+    <Content Include="img\signin.gif" />
+    <Content Include="img\w.jpg" />
+    <Content Include="js\creative.js" />
+    <Content Include="js\creative.min.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Lyrics.aspx" />
+    <Content Include="Search.aspx" />
+    <Content Include="SearchMp3.aspx" />
+    <Content Include="SearchMp4.aspx" />
+    <Content Include="Songs\Aashiqi 2\Aasan Nahin Yahan.mp3" />
+    <Content Include="Songs\Aashiqi 2\Aashiqui.jpeg" />
+    <Content Include="Songs\Aashiqi 2\AlbumArtSmall.jpg" />
+    <Content Include="Songs\Aashiqi 2\Bhula Dena.mp3" />
+    <Content Include="Songs\Aashiqi 2\Chahun Main Ya Naa.mp3" />
+    <Content Include="Songs\Aashiqi 2\Folder.jpg" />
+    <Content Include="Songs\Aashiqi 2\Hum Mar Jayenge.mp3" />
+    <Content Include="Songs\Aashiqi 2\Meri Aashiqui.mp3" />
+    <Content Include="Songs\Aashiqi 2\Milne Hai Mujhse Aayi.mp3" />
+    <Content Include="Songs\Aashiqi 2\Piya Aaye Na.mp3" />
+    <Content Include="Songs\Aashiqi 2\Sunn Raha Hai - Female.mp3" />
+    <Content Include="Songs\Aashiqi 2\Sunn Raha Hai.mp3" />
+    <Content Include="Songs\Aashiqi 2\Tum Hi Ho.mp3" />
+    <Content Include="Songs\BattiGulMeterChalu.jpg" />
+    <Content Include="Songs\Chogada.mp3" />
+    <Content Include="Songs\Dekhte Dekhte.mp3" />
+    <Content Include="Songs\Dhadak\AlbumArtSmall.jpg" />
+    <Content Include="Songs\Dhadak\Dhadak Title Track.mp3" />
+    <Content Include="Songs\Dhadak\Dhadak.jpeg" />
+    <Content Include="Songs\Dhadak\Folder.jpg" />
+    <Content Include="Songs\Dhadak\Pehli Baar - FUSIC.mp3" />
+    <Content Include="Songs\Dhadak\Zingaat - FUSIC.mp3" />
+    <Content Include="Songs\Ed Sheeran - Perfect %28Official Music Video%29 %28128  kbps%29.mp3" />
+    <Content Include="Songs\Ed Sheeran - Shape of You  %28DawnFoxes.com%29.mp3" />
+    <Content Include="Songs\ed.jpg" />
+    <Content Include="Songs\Gold\gold.jpg" />
+    <Content Include="Songs\Gold\Naino Ne Baandhi - FUSIC.mp3" />
+    <Content Include="Songs\Kamariya.mp3" />
+    <Content Include="Songs\Loveratri_Poster.jpg" />
+    <Content Include="Songs\Mitron_poster.jpg" />
+    <Content Include="Songs\Tera Hua.mp3" />
+    <Content Include="Update.aspx" />
+    <Content Include="UpdateAlbum.aspx" />
+    <Content Include="UpdateArtist.aspx" />
+    <Content Include="UpdateCategory.aspx" />
+    <Content Include="UpdateSong.aspx" />
+    <Content Include="UserAllSongs.aspx" />
+    <Content Include="UserAllSongsmp4.aspx" />
+    <Content Include="UserFeedback.aspx" />
+    <Content Include="UserHome.aspx" />
+    <Content Include="UserSearchMp3.aspx" />
+    <Content Include="View.aspx" />
+    <Content Include="ViewLyrics.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="FileCS.ashx" />
+    <Content Include="FileCS1.ashx" />
+    <Content Include="Admin.Master" />
+    <None Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Register.aspx" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\fontawesome-free\css\all.css" />
+    <Content Include="vendor\fontawesome-free\css\all.min.css" />
+    <Content Include="vendor\fontawesome-free\css\brands.css" />
+    <Content Include="vendor\fontawesome-free\css\brands.min.css" />
+    <Content Include="vendor\fontawesome-free\css\fontawesome.css" />
+    <Content Include="vendor\fontawesome-free\css\fontawesome.min.css" />
+    <Content Include="vendor\fontawesome-free\css\regular.css" />
+    <Content Include="vendor\fontawesome-free\css\regular.min.css" />
+    <Content Include="vendor\fontawesome-free\css\solid.css" />
+    <Content Include="vendor\fontawesome-free\css\solid.min.css" />
+    <Content Include="vendor\fontawesome-free\css\svg-with-js.css" />
+    <Content Include="vendor\fontawesome-free\css\svg-with-js.min.css" />
+    <Content Include="vendor\fontawesome-free\css\v4-shims.css" />
+    <Content Include="vendor\fontawesome-free\css\v4-shims.min.css" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="vendor\jquery-easing\jquery.easing.compatibility.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.js" />
+    <Content Include="vendor\jquery-easing\jquery.easing.min.js" />
+    <Content Include="vendor\jquery\jquery.js" />
+    <Content Include="vendor\jquery\jquery.min.js" />
+    <Content Include="vendor\jquery\jquery.slim.js" />
+    <Content Include="vendor\jquery\jquery.slim.min.js" />
+    <Content Include="vendor\magnific-popup\jquery.magnific-popup.js" />
+    <Content Include="vendor\magnific-popup\jquery.magnific-popup.min.js" />
+    <Content Include="vendor\magnific-popup\magnific-popup.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddAlbum.aspx.cs">
+      <DependentUpon>AddAlbum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddAlbum.aspx.designer.cs">
+      <DependentUpon>AddAlbum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddArtists.aspx.cs">
+      <DependentUpon>AddArtists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddArtists.aspx.designer.cs">
+      <DependentUpon>AddArtists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCategory.aspx.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCategory.aspx.designer.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddLyrics.aspx.cs">
+      <DependentUpon>AddLyrics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddLyrics.aspx.designer.cs">
+      <DependentUpon>AddLyrics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddSong.aspx.cs">
+      <DependentUpon>AddSong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddSong.aspx.designer.cs">
+      <DependentUpon>AddSong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddSongsmp3mp4.aspx.cs">
+      <DependentUpon>AddSongsmp3mp4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddSongsmp3mp4.aspx.designer.cs">
+      <DependentUpon>AddSongsmp3mp4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddSongsmp4.aspx.cs">
+      <DependentUpon>AddSongsmp4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddSongsmp4.aspx.designer.cs">
+      <DependentUpon>AddSongsmp4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllSongs.aspx.cs">
+      <DependentUpon>AllSongs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllSongs.aspx.designer.cs">
+      <DependentUpon>AllSongs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllSongsmp3.aspx.cs">
+      <DependentUpon>AllSongsmp3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllSongsmp3.aspx.designer.cs">
+      <DependentUpon>AllSongsmp3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllSongsmp4.aspx.cs">
+      <DependentUpon>AllSongsmp4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllSongsmp4.aspx.designer.cs">
+      <DependentUpon>AllSongsmp4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteAlbum.aspx.cs">
+      <DependentUpon>DeleteAlbum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteAlbum.aspx.designer.cs">
+      <DependentUpon>DeleteAlbum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteArtist.aspx.cs">
+      <DependentUpon>DeleteArtist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteArtist.aspx.designer.cs">
+      <DependentUpon>DeleteArtist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteCategory.aspx.cs">
+      <DependentUpon>DeleteCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteCategory.aspx.designer.cs">
+      <DependentUpon>DeleteCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteSong.aspx.cs">
+      <DependentUpon>DeleteSong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteSong.aspx.designer.cs">
+      <DependentUpon>DeleteSong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPass.aspx.cs">
+      <DependentUpon>ForgotPass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPass.aspx.designer.cs">
+      <DependentUpon>ForgotPass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.Master.cs">
+      <DependentUpon>Homepage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage.Master.designer.cs">
+      <DependentUpon>Homepage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lyrics.aspx.cs">
+      <DependentUpon>Lyrics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lyrics.aspx.designer.cs">
+      <DependentUpon>Lyrics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMp3.aspx.cs">
+      <DependentUpon>SearchMp3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchMp3.aspx.designer.cs">
+      <DependentUpon>SearchMp3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMp4.aspx.cs">
+      <DependentUpon>SearchMp4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchMp4.aspx.designer.cs">
+      <DependentUpon>SearchMp4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Update.aspx.cs">
+      <DependentUpon>Update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateAlbum.aspx.cs">
+      <DependentUpon>UpdateAlbum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateAlbum.aspx.designer.cs">
+      <DependentUpon>UpdateAlbum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateArtist.aspx.cs">
+      <DependentUpon>UpdateArtist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateArtist.aspx.designer.cs">
+      <DependentUpon>UpdateArtist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCategory.aspx.cs">
+      <DependentUpon>UpdateCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateCategory.aspx.designer.cs">
+      <DependentUpon>UpdateCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSong.aspx.cs">
+      <DependentUpon>UpdateSong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateSong.aspx.designer.cs">
+      <DependentUpon>UpdateSong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserAllSongs.aspx.cs">
+      <DependentUpon>UserAllSongs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserAllSongs.aspx.designer.cs">
+      <DependentUpon>UserAllSongs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserAllSongsmp4.aspx.cs">
+      <DependentUpon>UserAllSongsmp4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserAllSongsmp4.aspx.designer.cs">
+      <DependentUpon>UserAllSongsmp4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserFeedback.aspx.cs">
+      <DependentUpon>UserFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserFeedback.aspx.designer.cs">
+      <DependentUpon>UserFeedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.aspx.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserHome.aspx.designer.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserSearchMp3.aspx.cs">
+      <DependentUpon>UserSearchMp3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserSearchMp3.aspx.designer.cs">
+      <DependentUpon>UserSearchMp3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View.aspx.cs">
+      <DependentUpon>View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewLyrics.aspx.cs">
+      <DependentUpon>ViewLyrics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewLyrics.aspx.designer.cs">
+      <DependentUpon>ViewLyrics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scss\creative.scss" />
+    <Content Include="scss\_global.scss" />
+    <Content Include="scss\_masthead.scss" />
+    <Content Include="scss\_navbar.scss" />
+    <Content Include="scss\_portfolio.scss" />
+    <Content Include="scss\_variables.scss" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js.map" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="vendor\jquery\jquery.min.map" />
+    <Content Include="vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Homepage.Master" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53350/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

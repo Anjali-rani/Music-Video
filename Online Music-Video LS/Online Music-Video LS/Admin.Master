@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Online_Music_Video_LS.Admin" %>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>FUSIC+</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body background="img/music16.jpg">
+  <form runat="server">
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+       
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="AdminHome.aspx">
+                        FUSIC+
+                    </a>
+                </li>
+                <li>
+                    <a href="AdminHome.aspx">
+
+                        <marquee direction="left" scrollamount="5" scrolldelay="4">
+        <h4 style="font-style: oblique; 
+            font-variant: normal; color: #FFFFFF;"><asp:Label ID="Label2" runat="server" ></asp:Label></h4>
+       
+        </marquee>     
+
+                    </a>
+              
+                   </li>
+                <li>
+                    <a href="Add.aspx">Add</a>
+                </li>
+                <li>
+                    <a href="Update.aspx">Update</a>
+                </li>
+                <li>
+                    <a href="Delete.aspx">Delete</a>
+                </li>
+                <li>
+                    <a href="View.aspx">View Feeback & <br />&nbsp;&nbsp;&nbsp;&nbsp; User Contact Details</a>
+                </li>
+                
+          
+<li>      <a id="AnchorButton"
+     onserverclick="logout_click" CausesValidation="False"
+     runat="server"><i><b style="color: #FFFFFF">Log Out</b></i></a>
+                </li>
+            </ul>
+        </div>
+    
+        <!-- /#sidebar-wrapper -->
+
+    
+        <!-- Page Content -->
+         
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+            <br />
+            <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Menu</a>
+            <br /><br />
+               
+                
+   
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+  
+
+
+    </div>
+    <!-- /#wrapper -->
+
+
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</form>
+</body>
+
+</html>
